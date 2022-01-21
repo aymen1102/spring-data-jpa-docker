@@ -19,5 +19,5 @@
 `\c springjpa`
 * Display tables list
 `\dt`
-# Exit psql
+* Exit psql
 `\q`
