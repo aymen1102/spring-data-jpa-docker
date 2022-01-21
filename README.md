@@ -1,6 +1,6 @@
 `docker build -t spring-data-jpa-docker .`
 
-`docker run -p 8080:8081 --name spring-data-jpa-docker spring-data-jpa-docker`
+`docker run -p 8080:8080 --name spring-data-jpa-docker spring-data-jpa-docker`
 
 * This command will download the alpine version image of postgres :
 `docker pull postgres:alpine`
