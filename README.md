@@ -24,3 +24,9 @@
 `\dt`
 * Exit psql
 `\q`
+
+* Display network list
+`docker network ls`
+`docker network create spring-docker-network`
+`docker network connect spring-docker-network postgres`
+`docker container inspect postgres`
