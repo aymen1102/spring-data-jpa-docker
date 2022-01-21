@@ -15,3 +15,7 @@
 `create DATABASE springjpa;`
 * Display the database list
 `\l`
+* Connect to the database
+`\c springjpa`
+* Display tables list
+\dt
