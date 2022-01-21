@@ -7,3 +7,12 @@
 
 * RUN inside the postgres container <br/>
 `docker exec -it postgres bash`
+
+* Display all Postgres command : 
+`psql --help`
+
+* Connect to Postgres with the user postgres :
+`psql -U postgres`
+
+* Display postgres users :
+`\du`
