@@ -11,3 +11,7 @@
 `psql -U postgres`
 * Display postgres users :
 `\du`
+* Create a database 
+`create DATABASE springjpa;`
+* Display the database list
+`\l`
