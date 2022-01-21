@@ -18,4 +18,4 @@
 * Connect to the database
 `\c springjpa`
 * Display tables list
-\dt
+`\dt`
