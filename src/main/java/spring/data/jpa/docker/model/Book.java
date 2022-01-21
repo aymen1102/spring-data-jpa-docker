@@ -2,12 +2,13 @@ package spring.data.jpa.docker.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
 import static javax.persistence.GenerationType.SEQUENCE;
+
 
 @Entity(name = "Book")
 @Table(name = "book")
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(
@@ -38,13 +39,14 @@ public class Book {
                     name = "student_book_fk"
             )
     )
+
     private Student student;
 
     public Book() {
+
     }
 
-    public Book(String bookName,
-                LocalDateTime createdAt) {
+    public Book(String bookName, LocalDateTime createdAt) {
         this.createdAt = createdAt;
         this.bookName = bookName;
     }

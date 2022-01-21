@@ -20,6 +20,7 @@ public class EnrolmentId implements Serializable {
     }
 
     public EnrolmentId() {
+
     }
 
     public Long getStudentId() {

@@ -28,47 +28,56 @@ public class Application {
         return args -> {
             Faker faker = new Faker();
 
-            //Création d'un étudiant
+            /**
+             * Create a student with fake data
+             */
             String firstName = faker.name().firstName();
             String lastName = faker.name().lastName();
-            String email = String.format("%s.%s@amigoscode.edu", firstName, lastName);
+            String email = String.format("%s.%s@gmail.com", firstName, lastName);
             Student student = new Student(
                     firstName,
                     lastName,
                     email,
-                    faker.number().numberBetween(17, 55));
+                    faker.number().numberBetween(17, 30));
 
-            //Ajouter des livres  à l'étudiant
-            student.addBook(new Book("Clean Code", LocalDateTime.now().minusDays(4)));
-            student.addBook(new Book("Think and Grow Rich", LocalDateTime.now()));
+            /**
+             * Add books to the student
+             */
+            student.addBook(new Book("Spring boot in action", LocalDateTime.now().minusDays(4)));
+            student.addBook(new Book("Master Docker", LocalDateTime.now()));
             student.addBook(new Book("Spring Data JPA", LocalDateTime.now().minusYears(1)));
 
-            //Ajouter un IdCard à l'étudiant
+            /**
+             * Add an IdCart to the student
+             */
             StudentIdCard studentIdCard = new StudentIdCard("123456789",student);
             student.setStudentIdCard(studentIdCard);
 
-            //Ajouter des inscriptions à l'étudiant
+            /**
+             * Add subscription to a courses
+             */
             student.addEnrolment(new Enrolment(
                     new EnrolmentId(1L, 1L),
                     student,
-                    new Course("Computer Science", "IT"),
+                    new Course("Computer Science Course", "IT"),
                     LocalDateTime.now()
             ));
             student.addEnrolment(new Enrolment(
                     new EnrolmentId(1L, 2L),
                     student,
-                    new Course("Amigoscode Spring Data JPA", "IT"),
+                    new Course("Spring Data JPA Course", "IT"),
                     LocalDateTime.now().minusDays(18)
             ));
             student.addEnrolment(new Enrolment(
                     new EnrolmentId(1L, 2L),
                     student,
-                    new Course("Amigoscode Spring Data JPA", "IT"),
+                    new Course("Docker Course", "IT"),
                     LocalDateTime.now().minusDays(18)
             ));
 
-
-            //Enregistrer un étudiant dans la BDD
+            /**
+             * Save a student in the database
+             */
             studentRepository.save(student);
              
             studentRepository.findById(1L)
