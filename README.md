@@ -1,18 +1,13 @@
 
-* This command will download the alpine version image of postgres : <br/>
+* This command will download the alpine version image of postgres :
 `docker pull postgres:alpine`
-
-* Run the postgres image <br/>
+* Run the postgres image
 `docker run --name postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres:alpine`
-
-* RUN inside the postgres container <br/>
+* RUN inside the postgres container
 `docker exec -it postgres bash`
-
 * Display all Postgres command : 
 `psql --help`
-
 * Connect to Postgres with the user postgres :
 `psql -U postgres`
-
 * Display postgres users :
 `\du`
