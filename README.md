@@ -15,11 +15,11 @@
 * Display postgres users :
 `\du`
 * Create a database 
-`create DATABASE springjpa;`
+`create DATABASE springjpadocker;`
 * Display the database list
 `\l`
 * Connect to the database
-`\c springjpa`
+`\c springjpadocker`
 * Display tables list
 `\dt`
 * Exit psql
