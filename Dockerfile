@@ -9,5 +9,3 @@ add target/*.jar spring-data-jpa-docker.jar
 
 #ENTRYPOINT permet d’ajouter une commande qui sera exécutée par défaut
 ENTRYPOINT ["java","-jar","spring-data-jpa-docker.jar"]
-
-EXPOSE 8080
