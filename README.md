@@ -1,10 +1,10 @@
-/edjnoene
-`docker-compose up`
+# Tutorial to make the project work locally :<br />
+1 - Import the projet on your IDE<br />
+2 - Build the project to generate `springboot-docker-0.0.1-SNAPSHOT.jar` in the target file<br />
+3 - Build Docker compose : `docker-compose up` <br />
 
 
-`docker build -t spring-data-jpa-docker .`
-
-`docker run -p 8080:8080 --name spring-data-jpa-docker spring-data-jpa-docker`
+# Some useful commands<br />
 
 * This command will download the alpine version image of postgres :
 `docker pull postgres:alpine`
