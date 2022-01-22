@@ -29,11 +29,10 @@
 * Exit psql
 `\q`
 
-`docker build -t spring-data-jpa-docker .`
-`docker run -p 8080:8080 --name spring-data-jpa-docker spring-data-jpa-docker`
+* Generate image from the dockerfile : `docker build -t spring-data-jpa-docker .`
+* Run the app image `docker run -p 8080:8080 --name spring-data-jpa-docker spring-data-jpa-docker`
 
-* Display network list
-`docker network ls`
-`docker network create spring-docker-network`
-`docker network connect spring-docker-network postgres`
-`docker container inspect postgres`
+* Display network list : `docker network ls`
+* Create a network : `docker network create spring-docker-network`
+* Connect the network with postgres : `docker network connect spring-docker-network postgres`
+* Inspect the postgres container to verify the network connection :`docker container inspect postgres`
