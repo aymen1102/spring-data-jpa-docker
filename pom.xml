@@ -14,7 +14,8 @@
 	<name>spring-data-jpa-docker</name>
 	<description>Demo project for Spring Boot + Spring Data JPA</description>
 	<properties>
-		<java.version>16</java.version>
+		<maven.compiler.source>16</maven.compiler.source>
+		<maven.compiler.target>16</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
