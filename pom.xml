@@ -8,7 +8,7 @@
 		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>spring-data-jpa-docker</groupId>
+	<groupId>com.aybaroud</groupId>
 	<artifactId>spring-data-jpa-docker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-data-jpa-docker</name>
