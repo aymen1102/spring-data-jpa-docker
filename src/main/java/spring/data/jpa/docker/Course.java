@@ -1,4 +1,4 @@
-package spring.data.jpa.docker.model;
+package spring.data.jpa.docker;
 
 import javax.persistence.*;
 import java.util.ArrayList;

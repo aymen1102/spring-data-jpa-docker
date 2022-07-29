@@ -7,12 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import java.time.LocalDateTime;
 import java.util.List;
-import spring.data.jpa.docker.model.Book;
-import spring.data.jpa.docker.model.Course;
-import spring.data.jpa.docker.model.Enrolment;
-import spring.data.jpa.docker.model.EnrolmentId;
-import spring.data.jpa.docker.model.Student;
-import spring.data.jpa.docker.model.StudentIdCard;
 
 @SpringBootApplication
 public class Application {
